@@ -28,7 +28,6 @@ async def callback(request: Request):
     # Signature from Line Header
     signature = request.headers.get("X-Line-Signature", "")
 
-    # Đọc nội dung body từ request
     body = await request.body()
     body_str = body.decode("utf-8")
 
