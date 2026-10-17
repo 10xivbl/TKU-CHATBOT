@@ -45,7 +45,7 @@ async def callback(request: Request):
             #  (Mock response)
             bot_response = "Hi Guys. We are still in testing phase."
 
-            # Gửi phản hồi lại cho người dùng qua LINE Messaging API
+            # Send responses through LINE Messaging API
             with ApiClient(configuration) as api_client:
                 line_bot_api = MessagingApi(api_client)
                 line_bot_api.reply_message(
