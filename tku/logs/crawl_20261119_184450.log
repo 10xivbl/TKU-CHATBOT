@@ -1,0 +1,348 @@
+2026-11-19 18:44:52 [scrapy.utils.log] INFO: Scrapy 2.19.0 started (bot: tku)
+2026-11-19 18:44:53 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.1.3',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.6.0',
+ 'parsel': '1.12.1',
+ 'w3lib': '2.5.0',
+ 'Twisted': '26.4.0',
+ 'Python': '3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '26.4.0 (OpenSSL 4.0.3 29 Sep 2026)',
+ 'cryptography': '50.0.2',
+ 'Platform': 'Windows-11-10.0.26200-SP0'}
+2026-11-19 18:44:53 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-11-19 18:44:53 [scrapy.extensions.telnet] INFO: Telnet Password: be4ed42c27aea43f
+2026-11-19 18:44:53 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle',
+ 'scrapy.extensions.remote_control.RemoteControl']
+2026-11-19 18:44:53 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 30.0,
+ 'AUTOTHROTTLE_START_DELAY': 1.0,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'tku',
+ 'CONCURRENT_REQUESTS': 8,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'DOWNLOAD_DELAY': 1.0,
+ 'DOWNLOAD_MAXSIZE': 104857600,
+ 'DOWNLOAD_TIMEOUT': 60,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\crawl_20261119_184450.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'tku.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['tku.spiders'],
+ 'USER_AGENT': 'TKU-RAG-student-project '
+               '(https://github.com/10xivbl/TKU-CHATBOT)'}
+2026-11-19 18:44:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-11-19 18:44:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware',
+ 'scrapy.spidermiddlewares.metacopy.MetaCopyDetectionMiddleware']
+2026-11-19 18:44:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['tku.pipelines.CleanPipeline', 'tku.pipelines.ChangePipeline']
+2026-11-19 18:44:54 [py.warnings] WARNING: C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\pipelines\__init__.py:66: ScrapyDeprecationWarning: CleanPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(mw.process_item)
+
+2026-11-19 18:44:54 [py.warnings] WARNING: C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\pipelines\__init__.py:66: ScrapyDeprecationWarning: ChangePipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(mw.process_item)
+
+2026-11-19 18:44:54 [scrapy.core.engine] INFO: Spider opened
+2026-11-19 18:44:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-11-19 18:44:54 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-11-19 18:44:54 [scrapy.extensions.remote_control] INFO: Remote control HTTP server listening on port 53549 (job 43376-38907e145c364b7e97a62e78e0312b52)
+2026-11-19 18:45:01 [tkusite] WARNING: Request failed: https://www.sports.tku.edu.tw/ (Ignoring non-200 response)
+2026-11-19 18:45:21 [tkusite] WARNING: Request failed: https://www.sports.tku.edu.tw/%e5%85%bc%e4%bb%bb%e5%b8%ab%e8%b3%87/ (Ignoring non-200 response)
+2026-11-19 18:45:54 [scrapy.extensions.logstats] INFO: Crawled 220 pages (at 220 pages/min), scraped 137 items (at 137 items/min)
+2026-11-19 18:45:55 [tkusite] WARNING: Request failed: https://www.hr.tku.edu.tw/Front/News/News.aspx?id=wCycZGB%2B20I= (Ignoring non-200 response)
+2026-11-19 18:45:57 [tkusite] WARNING: Request failed: https://www.oce.tku.edu.tw/user/signup/step1.html (Ignoring non-200 response)
+2026-11-19 18:45:57 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.im.tku.edu.tw/wp-content/uploads/2026/09/115-1證照研習檔期.pdf
+{'url': 'https://www.im.tku.edu.tw/wp-content/uploads/2026/09/115-1證照研習檔期.pdf', 'final_url': 'https://www.im.tku.edu.tw/wp-content/uploads/2026/09/115-1%E8%AD%89%E7%85%A7%E7%A0%94%E7%BF%92%E6%AA%94%E6%9C%9F.pdf', 'site': 'www.im.tku.edu.tw', 'section': 'weekly', 'label': 'IM', 'kind': 'attachment', 'parent_url': 'https://www.im.tku.edu.tw/%e5%85%ac%e5%91%8a%e3%80%8c115%e5%ad%b8%e5%b9%b4%e7%ac%ac1%e5%ad%b8%e6%9c%9f%e8%ad%89%e7%85%a7%e8%bc%94%e5%b0%8e%e7%a0%94%e7%bf%92%e3%80%8d%e6%aa%94%e6%9c%9f/', 'anchor': '115-1證照研習檔期', 'type': 'pdf'}
+2026-11-19 18:45:57 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/F0-91-89-25-76-52-49-E1-23-12-8D-4B-85-DA-47-B3.pdf (Ignoring non-200 response)
+2026-11-19 18:45:58 [tkusite] WARNING: Request failed: https://www.sports.tku.edu.tw/%e5%b0%88%e4%bb%bb%e5%b8%ab%e8%b3%87/ (Ignoring non-200 response)
+2026-11-19 18:46:03 [tkusite] WARNING: Request failed: https://www.cte.tku.edu.tw/unknown (Ignoring non-200 response)
+2026-11-19 18:46:09 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.ins.tku.edu.tw/ins/wp-content/uploads/2026/09/吳家錄研究所申請表.pdf
+{'url': 'https://www.ins.tku.edu.tw/ins/wp-content/uploads/2026/09/吳家錄研究所申請表.pdf', 'final_url': 'https://www.ins.tku.edu.tw/ins/wp-content/uploads/2026/09/%E5%90%B3%E5%AE%B6%E9%8C%84%E7%A0%94%E7%A9%B6%E6%89%80%E7%94%B3%E8%AB%8B%E8%A1%A8.pdf', 'site': 'www.ins.tku.edu.tw', 'section': 'weekly', 'label': 'INS', 'kind': 'attachment', 'parent_url': 'https://www.ins.tku.edu.tw/ins/?tkuisotope=%e5%89%8d%e4%b8%80%e5%ad%b8%e5%b9%b4%e6%88%90%e7%b8%be%e4%b8%8a%e4%b8%8b%e5%ad%b8%e6%9c%9f%e7%9b%b8%e5%8a%a0%e5%b9%b3%e5%9d%87%e4%b8%a64%e6%8d%a85%e5%85%a5%e5%be%8c%e6%9c%8980%e5%88%86%e5%8d%b3', 'anchor': '研究所申請表及辦法', 'type': 'pdf'}
+2026-11-19 18:46:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://spirit.tku.edu.tw/robots.txt> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2026-11-19 18:46:10 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET http://spirit.tku.edu.tw/x107>: TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+Traceback (most recent call last):
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\downloadermiddlewares\robotstxt.py", line 100, in robot_parser
+    resp = await self.crawler.engine.download_async(robotsreq)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\engine.py", line 491, in download_async
+    response_or_request = await maybe_deferred_to_future(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._download(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\twisted\internet\defer.py", line 1834, in _inlineCallbacks
+    result = context.run(
+        cast(Failure, result).throwExceptionIntoGenerator, gen
+    )
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\engine.py", line 514, in _download
+    result = yield self.downloader.fetch(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\twisted\internet\defer.py", line 1834, in _inlineCallbacks
+    result = context.run(
+        cast(Failure, result).throwExceptionIntoGenerator, gen
+    )
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\__init__.py", line 226, in fetch
+    result: Response | Request = yield (
+                                 ^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\twisted\internet\defer.py", line 1247, in adapt
+    extracted: _SelfResultT | Failure = result.result()
+                                        ~~~~~~~~~~~~~^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\middleware.py", line 87, in download_async
+    result = await self._process_exception(ex, request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\middleware.py", line 156, in _process_exception
+    raise exception
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\middleware.py", line 80, in download_async
+    result: Response | Request = await self._process_request(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        request, download_func
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\middleware.py", line 114, in _process_request
+    return await download_func(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\__init__.py", line 281, in _enqueue_request
+    return await maybe_deferred_to_future(d)  # fired in _wait_for_download()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\__init__.py", line 348, in _wait_for_download
+    response = await self._download(slot, request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\__init__.py", line 318, in _download
+    response: Response = await self.handlers.download_request_async(request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\handlers\__init__.py", line 168, in download_request_async
+    return await handler.download_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 140, in download_request
+    return await maybe_deferred_to_future(agent.download_request(request))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2026-11-19 18:46:10 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2025/02/113朵法婭生活美學合約.pdf
+{'url': 'https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2025/02/113朵法婭生活美學合約.pdf', 'final_url': 'https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2025/02/113%E6%9C%B5%E6%B3%95%E5%A9%AD%E7%94%9F%E6%B4%BB%E7%BE%8E%E5%AD%B8%E5%90%88%E7%B4%84.pdf', 'site': 'www.welfare.tku.edu.tw', 'section': 'weekly', 'label': 'Student Welfare (www)', 'kind': 'attachment', 'parent_url': 'https://www.welfare.tku.edu.tw/welfare/?tkuisotope=%e5%85%ac%e5%91%8a%e3%80%8c%e6%9c%b5%e6%b3%95%e5%a9%ad%e7%94%9f%e6%b4%bb%e7%be%8e%e5%ad%b8%e3%80%8d-%e6%b7%a1%e6%b1%9f%e5%a4%a7%e5%ad%b8%e7%89%b9%e7%b4%84%e5%b0%88%e6%a1%88%e3%80%82-2', 'anchor': '相關附件 合約', 'type': 'pdf'}
+2026-11-19 18:46:10 [scrapy.core.scraper] WARNING: Dropped: too short: https://aero.tku.edu.tw/aero/wp-content/uploads/2026/10/2026全國智慧科技創客挑戰賽活動海報.pdf
+{'url': 'https://aero.tku.edu.tw/aero/wp-content/uploads/2026/10/2026全國智慧科技創客挑戰賽活動海報.pdf', 'final_url': 'https://aero.tku.edu.tw/aero/wp-content/uploads/2026/10/2026%E5%85%A8%E5%9C%8B%E6%99%BA%E6%85%A7%E7%A7%91%E6%8A%80%E5%89%B5%E5%AE%A2%E6%8C%91%E6%88%B0%E8%B3%BD%E6%B4%BB%E5%8B%95%E6%B5%B7%E5%A0%B1.pdf', 'site': 'aero.tku.edu.tw', 'section': 'weekly', 'label': 'Aerospace Engineering', 'kind': 'attachment', 'parent_url': 'https://aero.tku.edu.tw/aero/?tkuisotope=%e5%b4%91%e5%b1%b1%e7%a7%91%e6%8a%80%e5%a4%a7%e5%ad%b8%e8%be%a6%e7%90%86%e3%80%8c2026%e5%85%a8%e5%9c%8b%e6%99%ba%e6%85%a7%e7%a7%91%e6%8a%80%e5%89%b5%e5%ae%a2%e6%8c%91%e6%88%b0%e8%b3%bd%e3%80%8d', 'anchor': '2026全國智慧科技創客挑戰賽活動海報', 'type': 'pdf'}
+2026-11-19 18:46:15 [scrapy.core.downloader.handlers.http11] WARNING: Expected to receive 31967058 bytes which is larger than download max size (31457280) in request <GET https://www.phys.tku.edu.tw/phys/wp-content/uploads/2026/02/Exploring-the-Wonderful-World-of-Science-Presentation.pdf>.
+2026-11-19 18:46:15 [tkusite] WARNING: Request failed: https://www.phys.tku.edu.tw/phys/wp-content/uploads/2026/02/Exploring-the-Wonderful-World-of-Science-Presentation.pdf (Expected to receive 31967058 bytes which is larger than download max size (31457280) in request <GET https://www.phys.tku.edu.tw/phys/wp-content/uploads/2026/02/Exploring-the-Wonderful-World-of-Science-Presentation.pdf>.)
+2026-11-19 18:46:16 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.ins.tku.edu.tw/ins/wp-content/uploads/2026/09/吳家錄大學部申請表.pdf
+{'url': 'https://www.ins.tku.edu.tw/ins/wp-content/uploads/2026/09/吳家錄大學部申請表.pdf', 'final_url': 'https://www.ins.tku.edu.tw/ins/wp-content/uploads/2026/09/%E5%90%B3%E5%AE%B6%E9%8C%84%E5%A4%A7%E5%AD%B8%E9%83%A8%E7%94%B3%E8%AB%8B%E8%A1%A8.pdf', 'site': 'www.ins.tku.edu.tw', 'section': 'weekly', 'label': 'INS', 'kind': 'attachment', 'parent_url': 'https://www.ins.tku.edu.tw/ins/?tkuisotope=%e5%89%8d%e4%b8%80%e5%ad%b8%e5%b9%b4%e6%88%90%e7%b8%be%e4%b8%8a%e4%b8%8b%e5%ad%b8%e6%9c%9f%e7%9b%b8%e5%8a%a0%e5%b9%b3%e5%9d%87%e4%b8%a64%e6%8d%a85%e5%85%a5%e5%be%8c%e6%9c%8980%e5%88%86%e5%8d%b3', 'anchor': '大學部申請表及辦法', 'type': 'pdf'}
+2026-11-19 18:46:22 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/10-EF-F9-8C-D9-FC-6D-D0-60-81-82-08-41-CD-AF-CD.pdf (Ignoring non-200 response)
+2026-11-19 18:46:27 [tkusite] WARNING: Request failed: https://www.ai.tku.edu.tw/ai/114.11.4教育部鼓勵國內大專校院選送學生出國研修或國外專業實習補助要點修正規定 (Ignoring non-200 response)
+2026-11-19 18:46:31 [scrapy.core.scraper] WARNING: Dropped: too short: https://history.tku.edu.tw/history/wp-content/uploads/2025/08/計畫說明圖卡.pdf
+{'url': 'https://history.tku.edu.tw/history/wp-content/uploads/2025/08/計畫說明圖卡.pdf', 'final_url': 'https://history.tku.edu.tw/history/wp-content/uploads/2025/08/%E8%A8%88%E7%95%AB%E8%AA%AA%E6%98%8E%E5%9C%96%E5%8D%A1.pdf', 'site': 'history.tku.edu.tw', 'section': 'weekly', 'label': 'History', 'kind': 'attachment', 'parent_url': 'https://history.tku.edu.tw/history/?tkuisotope=2417', 'anchor': '計畫說明圖卡', 'type': 'pdf'}
+2026-11-19 18:46:32 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/A5-90-B1-9A-48-0B-A5-02-47-EB-81-80-A3-4D-71-5D.pdf (Ignoring non-200 response)
+2026-11-19 18:46:40 [tkusite] WARNING: Request failed: https://sa.tku.edu.tw/spirit/uploads//2025/01/%E6%B7%A1%E6%B1%9F%E5%A4%A7%E5%AD%B8%E6%B7%A1%E6%B0%B4%E6%A0%A1%E5%9C%92%E5%AD%B8%E7%94%9F%E9%80%80%E5%AE%BF%E5%AE%B6%E9%95%B7%E9%80%9A%E7%9F%A5%E6%9B%B8112.06.02.docx (Ignoring non-200 response)
+2026-11-19 18:46:45 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/E6-3F-03-43-65-63-A9-23-B5-9D-88-44-34-18-37-D4.pdf (Ignoring non-200 response)
+2026-11-19 18:46:46 [tkusite] WARNING: Request failed: http://www.titx.tku.edu.tw/download_archive.php?Sn=10&file_num=1 (Ignoring non-200 response)
+2026-11-19 18:46:48 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2025/11/旅居文旅x淡江大學福委會-特約公司房價優惠合約書_1131227.pdf
+{'url': 'https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2025/11/旅居文旅x淡江大學福委會-特約公司房價優惠合約書_1131227.pdf', 'final_url': 'https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2025/11/%E6%97%85%E5%B1%85%E6%96%87%E6%97%85x%E6%B7%A1%E6%B1%9F%E5%A4%A7%E5%AD%B8%E7%A6%8F%E5%A7%94%E6%9C%83-%E7%89%B9%E7%B4%84%E5%85%AC%E5%8F%B8%E6%88%BF%E5%83%B9%E5%84%AA%E6%83%A0%E5%90%88%E7%B4%84%E6%9B%B8_1131227.pdf', 'site': 'www.welfare.tku.edu.tw', 'section': 'weekly', 'label': 'Student Welfare (www)', 'kind': 'attachment', 'parent_url': 'https://www.welfare.tku.edu.tw/welfare/?tkuisotope=%e5%85%ac%e5%91%8a%e3%80%8c%e6%97%85%e5%b1%85%e6%96%87%e6%97%85%e9%9b%86%e5%9c%98%e3%80%8d%e6%b7%a1%e6%b1%9f%e5%a4%a7%e5%ad%b8%e6%95%99%e8%81%b7%e5%93%a1%e5%b7%a5%e5%84%aa%e6%83%a0%e5%b0%88%e6%a1%88', 'anchor': '相關附件', 'type': 'pdf'}
+2026-11-19 18:46:52 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/16-B0-4F-7E-9A-6A-C6-05-55-AB-23-EE-BB-38-43-97.pdf (Ignoring non-200 response)
+2026-11-19 18:46:54 [scrapy.extensions.logstats] INFO: Crawled 687 pages (at 467 pages/min), scraped 579 items (at 442 items/min)
+2026-11-19 18:46:58 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/DA-51-0C-F0-62-AA-76-F3-C0-69-70-A9-4E-58-D6-B5.pdf (Ignoring non-200 response)
+2026-11-19 18:47:01 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.acc.tku.edu.tw/acc/wp-content/uploads/2026/11/李張罔腰獎學金實施要點修正版8印-1.pdf
+{'url': 'https://www.acc.tku.edu.tw/acc/wp-content/uploads/2026/11/李張罔腰獎學金實施要點修正版8印-1.pdf', 'final_url': 'https://www.acc.tku.edu.tw/acc/wp-content/uploads/2026/11/%E6%9D%8E%E5%BC%B5%E7%BD%94%E8%85%B0%E7%8D%8E%E5%AD%B8%E9%87%91%E5%AF%A6%E6%96%BD%E8%A6%81%E9%BB%9E%E4%BF%AE%E6%AD%A3%E7%89%888%E5%8D%B0-1.pdf', 'site': 'www.acc.tku.edu.tw', 'section': 'weekly', 'label': 'Accounting', 'kind': 'attachment', 'parent_url': 'https://www.acc.tku.edu.tw/acc/?tkuisotope=%e6%9d%8e%e5%bc%b5%e7%bd%94%e8%85%b0%e5%a5%b3%e5%a3%ab%e7%8d%8e%e5%ad%b8%e9%87%91%e7%94%b3%e8%ab%8b%e5%85%ac%e5%91%8a', 'anchor': '下載', 'type': 'pdf'}
+2026-11-19 18:47:02 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.chemistry.tku.edu.tw/chemistry/wp-content/uploads/2026/10/臺115財果字第003號-實施辦法及名額分配表.pdf
+{'url': 'https://www.chemistry.tku.edu.tw/chemistry/wp-content/uploads/2026/10/臺115財果字第003號-實施辦法及名額分配表.pdf', 'final_url': 'https://www.chemistry.tku.edu.tw/chemistry/wp-content/uploads/2026/10/%E8%87%BA115%E8%B2%A1%E6%9E%9C%E5%AD%97%E7%AC%AC003%E8%99%9F-%E5%AF%A6%E6%96%BD%E8%BE%A6%E6%B3%95%E5%8F%8A%E5%90%8D%E9%A1%8D%E5%88%86%E9%85%8D%E8%A1%A8.pdf', 'site': 'www.chemistry.tku.edu.tw', 'section': 'weekly', 'label': 'Chemistry', 'kind': 'attachment', 'parent_url': 'https://www.chemistry.tku.edu.tw/chemistry/?tkuisotope=%e3%80%90%e7%8d%8e%e5%8a%a9%e5%ad%b8%e9%87%91%e3%80%91-%e8%bd%89%e7%9f%a5%e8%b2%a1%e5%9c%98%e6%b3%95%e4%ba%ba%e9%99%b3%e6%9e%9c%e5%a4%ab%e5%85%88%e7%94%9f%e7%8d%8e%e5%ad%b8%e9%87%91%e5%9f%ba%e9%87%91', 'anchor': '臺115財果字第003號-實施辦法及名額分配表.pdf', 'type': 'pdf'}
+2026-11-19 18:47:03 [scrapy.core.downloader.handlers.http11] WARNING: Expected to receive 34956644 bytes which is larger than download max size (31457280) in request <GET https://www.phys.tku.edu.tw/phys/wp-content/uploads/2026/10/2026_%E6%B7%A1%E6%B1%9F%E6%BC%94%E8%AC%9B.pptx>.
+2026-11-19 18:47:03 [tkusite] WARNING: Request failed: https://www.phys.tku.edu.tw/phys/wp-content/uploads/2026/10/2026_淡江演講.pptx (Expected to receive 34956644 bytes which is larger than download max size (31457280) in request <GET https://www.phys.tku.edu.tw/phys/wp-content/uploads/2026/10/2026_%E6%B7%A1%E6%B1%9F%E6%BC%94%E8%AC%9B.pptx>.)
+2026-11-19 18:47:03 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.ta.tku.edu.tw/ta/File/News/83-D6-94-F4-46-FF-66-4E-1C-59-F6-A0-D7-94-AB-07.pdf
+{'url': 'https://www.ta.tku.edu.tw/ta/File/News/83-D6-94-F4-46-FF-66-4E-1C-59-F6-A0-D7-94-AB-07.pdf', 'final_url': 'https://www.ta.tku.edu.tw/ta/File/News/83-D6-94-F4-46-FF-66-4E-1C-59-F6-A0-D7-94-AB-07.pdf', 'site': 'www.ta.tku.edu.tw', 'section': 'weekly', 'label': 'Translation and Interpretation (TA)', 'kind': 'attachment', 'parent_url': 'https://www.ta.tku.edu.tw/ta/?tkuisotope=%e5%8d%b3%e6%97%a5%e8%b5%b7%e9%96%8b%e6%94%be%e7%94%b3%e8%ab%8b%e6%99%ba%e6%85%a7%e4%ba%ba%e6%96%87%e5%ad%b8%e7%a8%8b%e8%87%b33-5%e6%97%a5%e6%88%aa%e6%ad%a2%ef%bc%81', 'anchor': '下載', 'type': 'pdf'}
+2026-11-19 18:47:04 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.im.tku.edu.tw/wp-content/uploads/2026/11/海報1106.pdf
+{'url': 'https://www.im.tku.edu.tw/wp-content/uploads/2026/11/海報1106.pdf', 'final_url': 'https://www.im.tku.edu.tw/wp-content/uploads/2026/11/%E6%B5%B7%E5%A0%B11106.pdf', 'site': 'www.im.tku.edu.tw', 'section': 'weekly', 'label': 'IM', 'kind': 'attachment', 'parent_url': 'https://www.im.tku.edu.tw/%e3%80%90%e6%ad%b2%e6%9c%ab%e8%a1%9d%e4%b8%80%e6%b3%a2%ef%bc%81%e3%80%91115%e5%ad%b8%e5%b9%b4%e5%ba%a6%e3%80%8c%e8%8b%b1%e8%aa%9e%e5%8f%a3%e8%aa%aa%e6%97%a5%ef%bc%8d%e5%af%86%e9%9b%86%e8%8b%b1/', 'anchor': '海報1106', 'type': 'pdf'}
+2026-11-19 18:47:05 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.ai.tku.edu.tw/ai/wp-content/uploads/2026/11/310900500Q0000000_1151201351_4_48海報_桃園.pdf
+{'url': 'https://www.ai.tku.edu.tw/ai/wp-content/uploads/2026/11/310900500Q0000000_1151201351_4_48海報_桃園.pdf', 'final_url': 'https://www.ai.tku.edu.tw/ai/wp-content/uploads/2026/11/310900500Q0000000_1151201351_4_48%E6%B5%B7%E5%A0%B1_%E6%A1%83%E5%9C%92.pdf', 'site': 'www.ai.tku.edu.tw', 'section': 'weekly', 'label': 'AI', 'kind': 'attachment', 'parent_url': 'https://www.ai.tku.edu.tw/ai/?tkuisotope=116%e5%ad%b8%e5%b9%b4%e5%ba%a6%e6%b7%a1%e6%b1%9fai%e7%b3%bb%e7%a2%a9%e5%a3%ab%e7%8f%ad%e7%94%84%e8%a9%a6', 'anchor': '海報_桃園.pdf', 'type': 'pdf'}
+2026-11-19 18:47:06 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.chemistry.tku.edu.tw/chemistry/wp-content/uploads/2026/10/臺115財果字第003號-申請書.pdf
+{'url': 'https://www.chemistry.tku.edu.tw/chemistry/wp-content/uploads/2026/10/臺115財果字第003號-申請書.pdf', 'final_url': 'https://www.chemistry.tku.edu.tw/chemistry/wp-content/uploads/2026/10/%E8%87%BA115%E8%B2%A1%E6%9E%9C%E5%AD%97%E7%AC%AC003%E8%99%9F-%E7%94%B3%E8%AB%8B%E6%9B%B8.pdf', 'site': 'www.chemistry.tku.edu.tw', 'section': 'weekly', 'label': 'Chemistry', 'kind': 'attachment', 'parent_url': 'https://www.chemistry.tku.edu.tw/chemistry/?tkuisotope=%e3%80%90%e7%8d%8e%e5%8a%a9%e5%ad%b8%e9%87%91%e3%80%91-%e8%bd%89%e7%9f%a5%e8%b2%a1%e5%9c%98%e6%b3%95%e4%ba%ba%e9%99%b3%e6%9e%9c%e5%a4%ab%e5%85%88%e7%94%9f%e7%8d%8e%e5%ad%b8%e9%87%91%e5%9f%ba%e9%87%91', 'anchor': '臺115財果字第003號-申請書.pdf', 'type': 'pdf'}
+2026-11-19 18:47:10 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/04-C7-9A-F0-67-49-14-DA-1B-02-0E-F3-BD-7D-54-F0.pdf (Ignoring non-200 response)
+2026-11-19 18:47:13 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.ai.tku.edu.tw/ai/wp-content/uploads/2026/11/310900500Q0000000_1151201351_3_48海報_高雄.pdf
+{'url': 'https://www.ai.tku.edu.tw/ai/wp-content/uploads/2026/11/310900500Q0000000_1151201351_3_48海報_高雄.pdf', 'final_url': 'https://www.ai.tku.edu.tw/ai/wp-content/uploads/2026/11/310900500Q0000000_1151201351_3_48%E6%B5%B7%E5%A0%B1_%E9%AB%98%E9%9B%84.pdf', 'site': 'www.ai.tku.edu.tw', 'section': 'weekly', 'label': 'AI', 'kind': 'attachment', 'parent_url': 'https://www.ai.tku.edu.tw/ai/?tkuisotope=116%e5%ad%b8%e5%b9%b4%e5%ba%a6%e6%b7%a1%e6%b1%9fai%e7%b3%bb%e7%a2%a9%e5%a3%ab%e7%8f%ad%e7%94%84%e8%a9%a6', 'anchor': '海報_高雄.pdf', 'type': 'pdf'}
+2026-11-19 18:47:15 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/A9-46-A6-09-6A-FF-C8-6A-99-C4-B0-3E-F9-D0-23-EA.pdf (Ignoring non-200 response)
+2026-11-19 18:47:17 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2026/06/王品台北中山北店特約書網頁.pdf
+{'url': 'https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2026/06/王品台北中山北店特約書網頁.pdf', 'final_url': 'https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2026/06/%E7%8E%8B%E5%93%81%E5%8F%B0%E5%8C%97%E4%B8%AD%E5%B1%B1%E5%8C%97%E5%BA%97%E7%89%B9%E7%B4%84%E6%9B%B8%E7%B6%B2%E9%A0%81.pdf', 'site': 'www.welfare.tku.edu.tw', 'section': 'weekly', 'label': 'Student Welfare (www)', 'kind': 'attachment', 'parent_url': 'https://www.welfare.tku.edu.tw/welfare/?tkuisotope=%e5%85%ac%e5%91%8a%e3%80%8c%e7%8e%8b%e5%93%81%e9%a4%90%e9%a3%b2%e8%82%a1%e4%bb%bd%e6%9c%89%e9%99%90%e5%85%ac%e5%8f%b8%e5%8f%b0%e5%8c%97%e4%b8%ad%e5%b1%b1%e5%8c%97%e5%ba%97-%e3%80%8d%e5%84%aa%e6%83%a0', 'anchor': '/welfare/wp-content/uploads/2026/06/王品台北中山北店特約書網頁.pdf', 'type': 'pdf'}
+2026-11-19 18:47:19 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.ai.tku.edu.tw/ai/wp-content/uploads/2026/11/310900500Q0000000_1151201351_2_48海報_臺中.pdf
+{'url': 'https://www.ai.tku.edu.tw/ai/wp-content/uploads/2026/11/310900500Q0000000_1151201351_2_48海報_臺中.pdf', 'final_url': 'https://www.ai.tku.edu.tw/ai/wp-content/uploads/2026/11/310900500Q0000000_1151201351_2_48%E6%B5%B7%E5%A0%B1_%E8%87%BA%E4%B8%AD.pdf', 'site': 'www.ai.tku.edu.tw', 'section': 'weekly', 'label': 'AI', 'kind': 'attachment', 'parent_url': 'https://www.ai.tku.edu.tw/ai/?tkuisotope=116%e5%ad%b8%e5%b9%b4%e5%ba%a6%e6%b7%a1%e6%b1%9fai%e7%b3%bb%e7%a2%a9%e5%a3%ab%e7%8f%ad%e7%94%84%e8%a9%a6', 'anchor': '海報_臺中.pdf', 'type': 'pdf'}
+2026-11-19 18:47:21 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://spirit.tku.edu.tw/x107> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2026-11-19 18:47:21 [tkusite] WARNING: Request failed: http://spirit.tku.edu.tw/x107 (TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..)
+2026-11-19 18:47:23 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.tfgx.tku.edu.tw/tfgx/wp-content/uploads/2025/02/Bankbuch.pdf
+{'url': 'https://www.tfgx.tku.edu.tw/tfgx/wp-content/uploads/2025/02/Bankbuch.pdf', 'final_url': 'https://www.tfgx.tku.edu.tw/tfgx/wp-content/uploads/2025/02/Bankbuch.pdf', 'site': 'www.tfgx.tku.edu.tw', 'section': 'weekly', 'label': 'TFGX', 'kind': 'attachment', 'parent_url': 'https://www.tfgx.tku.edu.tw/tfgx/?tkuisotope=%e5%85%ac%e5%91%8a114%e5%ad%b8%e5%b9%b4%e5%ba%a6%e7%89%b9%e9%87%8c%e7%88%be%e5%a4%a7%e5%ad%b8%e5%a4%a7%e4%b8%89%e5%87%ba%e5%9c%8b%e9%8c%84%e5%8f%96%e5%90%8d%e5%96%ae', 'anchor': '下載', 'type': 'pdf'}
+2026-11-19 18:47:24 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.tfox.tku.edu.tw/tfox/wp-content/uploads/2025/11/淡江大學歐語系德文組帳戶.pdf
+{'url': 'https://www.tfox.tku.edu.tw/tfox/wp-content/uploads/2025/11/淡江大學歐語系德文組帳戶.pdf', 'final_url': 'https://www.tfox.tku.edu.tw/tfox/wp-content/uploads/2025/11/%E6%B7%A1%E6%B1%9F%E5%A4%A7%E5%AD%B8%E6%AD%90%E8%AA%9E%E7%B3%BB%E5%BE%B7%E6%96%87%E7%B5%84%E5%B8%B3%E6%88%B6.pdf', 'site': 'www.tfox.tku.edu.tw', 'section': 'weekly', 'label': 'TFOX', 'kind': 'attachment', 'parent_url': 'https://www.tfox.tku.edu.tw/tfox/?tkuisotope=%e3%80%90%e5%be%b7%e6%96%87%e7%b5%84%e3%80%91%e5%85%ac%e5%91%8a115%e5%ad%b8%e5%b9%b4%e5%ba%a6%e7%ac%ac2%e5%ad%b8%e6%9c%9f%e6%b3%a2%e9%b4%bb%e9%ad%af%e7%88%be%e5%a4%a7%e5%ad%b8%e8%8f%af%e8%aa%9e', 'anchor': '下載', 'type': 'pdf'}
+2026-11-19 18:47:28 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/00-26-A6-14-F7-38-63-A0-15-09-49-5A-04-CB-DB-7E.pdf (Ignoring non-200 response)
+2026-11-19 18:47:29 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2025/02/Lexus廣宣版.pdf
+{'url': 'https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2025/02/Lexus廣宣版.pdf', 'final_url': 'https://www.welfare.tku.edu.tw/welfare/wp-content/uploads/2025/02/Lexus%E5%BB%A3%E5%AE%A3%E7%89%88.pdf', 'site': 'www.welfare.tku.edu.tw', 'section': 'weekly', 'label': 'Student Welfare (www)', 'kind': 'attachment', 'parent_url': 'https://www.welfare.tku.edu.tw/welfare/?tkuisotope=%e5%85%ac%e5%91%8a%e3%80%8clexus%e6%b1%bd%e8%bb%8a%e3%80%8d%e6%b7%a1%e6%b1%9f%e5%a4%a7%e5%ad%b8%e6%95%99%e8%81%b7%e5%93%a1%e5%b7%a5%e8%b3%bc%e8%bb%8a%e5%84%aa%e6%83%a0%e5%b0%88%e6%a1%88%e3%80%82', 'anchor': 'Lexus廣宣版.pdf', 'type': 'pdf'}
+2026-11-19 18:47:34 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.me.tku.edu.tw/me/wp-content/uploads/2026/09/附件3_社團法人台灣松樑教育公益促進協會助學金實施辦法-1.pdf
+{'url': 'https://www.me.tku.edu.tw/me/wp-content/uploads/2026/09/附件3_社團法人台灣松樑教育公益促進協會助學金實施辦法-1.pdf', 'final_url': 'https://www.me.tku.edu.tw/me/wp-content/uploads/2026/09/%E9%99%84%E4%BB%B63_%E7%A4%BE%E5%9C%98%E6%B3%95%E4%BA%BA%E5%8F%B0%E7%81%A3%E6%9D%BE%E6%A8%91%E6%95%99%E8%82%B2%E5%85%AC%E7%9B%8A%E4%BF%83%E9%80%B2%E5%8D%94%E6%9C%83%E5%8A%A9%E5%AD%B8%E9%87%91%E5%AF%A6%E6%96%BD%E8%BE%A6%E6%B3%95-1.pdf', 'site': 'www.me.tku.edu.tw', 'section': 'weekly', 'label': 'Mechanical Engineering (ME)', 'kind': 'attachment', 'parent_url': 'https://www.me.tku.edu.tw/me/?tkuisotope=%e5%8f%b0%e7%81%a3%e6%9d%be%e6%a8%91%e6%95%99%e8%82%b2%e5%85%ac%e7%9b%8a%e4%bf%83%e9%80%b2%e5%8d%94%e6%9c%83%e5%8a%a9%e5%ad%b8%e9%87%91%e8%b3%87%e8%a8%8a', 'anchor': '社團法人台灣松樑教育公益促進協會助學金實施辦法', 'type': 'pdf'}
+2026-11-19 18:47:38 [tkusite] WARNING: Request failed: https://www.ams.tku.edu.tw/ams/wp-content/uploads/2025/11/研發替代役徵選簡章.pdf (Ignoring non-200 response)
+2026-11-19 18:47:38 [tkusite] WARNING: Request failed: http://www.ba.tku.edu.tw/Download.aspx?dir=News&file=74-C7-78-92-03-23-CE-67-A3-DE-90-48-29-17-10-0E.jpg&filename=%e6%9c%89%e8%93%ae%e7%8d%8e%e5%ad%b8%e9%87%91 (Ignoring non-200 response)
+2026-11-19 18:47:38 [tkusite] WARNING: Request failed: http://www.che.tku.edu.tw/Download.aspx?dir=News&file=AB-09-F7-8E-E8-C3-9C-02-36-D1-9B-ED-29-E7-7B-A4.pdf&filename=%e4%ba%a4%e9%80%9a%e8%b3%87%e8%a8%8a (Ignoring non-200 response)
+2026-11-19 18:47:41 [scrapy.core.scraper] WARNING: Dropped: too short: https://www.me.tku.edu.tw/me/wp-content/uploads/2026/09/附件2_社團法人台灣松樑教育公益促進協會函-1.pdf
+{'url': 'https://www.me.tku.edu.tw/me/wp-content/uploads/2026/09/附件2_社團法人台灣松樑教育公益促進協會函-1.pdf', 'final_url': 'https://www.me.tku.edu.tw/me/wp-content/uploads/2026/09/%E9%99%84%E4%BB%B62_%E7%A4%BE%E5%9C%98%E6%B3%95%E4%BA%BA%E5%8F%B0%E7%81%A3%E6%9D%BE%E6%A8%91%E6%95%99%E8%82%B2%E5%85%AC%E7%9B%8A%E4%BF%83%E9%80%B2%E5%8D%94%E6%9C%83%E5%87%BD-1.pdf', 'site': 'www.me.tku.edu.tw', 'section': 'weekly', 'label': 'Mechanical Engineering (ME)', 'kind': 'attachment', 'parent_url': 'https://www.me.tku.edu.tw/me/?tkuisotope=%e5%8f%b0%e7%81%a3%e6%9d%be%e6%a8%91%e6%95%99%e8%82%b2%e5%85%ac%e7%9b%8a%e4%bf%83%e9%80%b2%e5%8d%94%e6%9c%83%e5%8a%a9%e5%ad%b8%e9%87%91%e8%b3%87%e8%a8%8a', 'anchor': '社團法人台灣松樑教育公益促進協會函', 'type': 'pdf'}
+2026-11-19 18:47:42 [tkusite] WARNING: Request failed: https://www.wree.tku.edu.tw/administrations/index (Ignoring non-200 response)
+2026-11-19 18:47:44 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/D0-99-FB-78-EB-FC-85-28-4D-86-0C-4A-B6-14-E5-D6.pdf (Ignoring non-200 response)
+2026-11-19 18:47:46 [tkusite] WARNING: Request failed: http://www.che.tku.edu.tw/Download.aspx?dir=News&file=1B-C8-FF-08-7B-84-43-53-7B-05-B7-5E-D6-4E-7D-56.png&filename=%e6%b5%b7%e5%a0%b1+%e7%b6%b2%e7%ab%99%e5%85%ac%e5%b8%83 (Ignoring non-200 response)
+2026-11-19 18:47:47 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/0B-27-EE-5D-37-5F-14-5E-0E-1E-3C-99-0A-98-6A-77.pdf (Ignoring non-200 response)
+2026-11-19 18:47:51 [tkusite] WARNING: Request failed: https://www.ba.tku.edu.tw/ba/?tkudownload=%e9%99%84%e4%bb%b64_114%e5%ad%b8%e5%b9%b4%e5%ba%a6%e6%b7%a1%e6%b1%9f%e5%a4%a7%e5%ad%b8%e5%95%86%e7%ae%a1%e5%ad%b8%e9%99%a2%e5%9c%8b%e9%9a%9b%e5%8c%96%e4%b8%bb%e8%bb%b8%e7%8d%8e%e5%8a%a9%e6%b5%b7 (Ignoring non-200 response)
+2026-11-19 18:47:52 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/DA-27-9F-19-51-B0-E6-5D-7D-A9-72-DD-D9-F5-00-4B.pdf (Ignoring non-200 response)
+2026-11-19 18:47:54 [tkusite] WARNING: Request failed: http://www.che.tku.edu.tw/Download.aspx?dir=News&file=F1-BB-9D-DB-FF-9D-66-92-E0-D6-F8-29-CA-6F-DD-F5.pdf&filename=2025%e5%b9%be%e4%b8%81%e8%b3%aa%e5%b9%be%e4%b8%81%e8%81%9a%e9%86%a3%e7%94%9f%e7%89%a9%e6%9d%90%e6%96%99%e7%a7%91%e6%8a%80%e7%a0%94%e8%a8%8e%e6%9c%83%e8%ad%b0%e7%a8%8b%e8%a1%a8 (Ignoring non-200 response)
+2026-11-19 18:47:54 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.management.tku.edu.tw:1337/robots.txt> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2026-11-19 18:47:54 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.management.tku.edu.tw:1337/uploads/TKU_1_1_Information_Session_Presentation_202606_c5e7bf3515.pdf>: TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+Traceback (most recent call last):
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\downloadermiddlewares\robotstxt.py", line 100, in robot_parser
+    resp = await self.crawler.engine.download_async(robotsreq)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\engine.py", line 491, in download_async
+    response_or_request = await maybe_deferred_to_future(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._download(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\twisted\internet\defer.py", line 1834, in _inlineCallbacks
+    result = context.run(
+        cast(Failure, result).throwExceptionIntoGenerator, gen
+    )
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\engine.py", line 514, in _download
+    result = yield self.downloader.fetch(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\twisted\internet\defer.py", line 1834, in _inlineCallbacks
+    result = context.run(
+        cast(Failure, result).throwExceptionIntoGenerator, gen
+    )
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\__init__.py", line 226, in fetch
+    result: Response | Request = yield (
+                                 ^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\twisted\internet\defer.py", line 1247, in adapt
+    extracted: _SelfResultT | Failure = result.result()
+                                        ~~~~~~~~~~~~~^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\middleware.py", line 87, in download_async
+    result = await self._process_exception(ex, request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\middleware.py", line 156, in _process_exception
+    raise exception
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\middleware.py", line 80, in download_async
+    result: Response | Request = await self._process_request(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        request, download_func
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\middleware.py", line 114, in _process_request
+    return await download_func(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\__init__.py", line 281, in _enqueue_request
+    return await maybe_deferred_to_future(d)  # fired in _wait_for_download()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\__init__.py", line 348, in _wait_for_download
+    response = await self._download(slot, request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\__init__.py", line 318, in _download
+    response: Response = await self.handlers.download_request_async(request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\handlers\__init__.py", line 168, in download_request_async
+    return await handler.download_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 140, in download_request
+    return await maybe_deferred_to_future(agent.download_request(request))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2026-11-19 18:47:54 [scrapy.extensions.logstats] INFO: Crawled 1238 pages (at 551 pages/min), scraped 1097 items (at 518 items/min)
+2026-11-19 18:47:54 [tkusite] WARNING: Request failed: https://www.ba.tku.edu.tw/ba/?tkudownload=%e9%99%84%e4%bb%b62_114%e5%ad%b8%e5%b9%b4%e5%ba%a6%e6%b7%a1%e6%b1%9f%e5%a4%a7%e5%ad%b8%e5%95%86%e7%ae%a1%e5%ad%b8%e9%99%a2%e6%a0%a1%e5%8b%99%e7%99%bc%e5%b1%95%e8%a8%88%e7%95%ab%e5%9c%8b%e9%9a%9b (Ignoring non-200 response)
+2026-11-19 18:47:55 [tkusite] WARNING: Request failed: https://www.science.tku.edu.tw/science/File/News/A8-15-38-48-BF-C1-EC-05-5B-B9-26-19-AE-30-06-2A.pdf (Ignoring non-200 response)
+2026-11-19 18:48:20 [tkusite] WARNING: Request failed: http://www.ai.tku.edu.tw/Front/groupstaff/professors/Members.aspx?id=S9EKPDmVPKo= (Ignoring non-200 response)
+2026-11-19 18:48:21 [tkusite] WARNING: Request failed: https://www.management.tku.edu.tw/management/wp-content/uploads/2025/02/1132%E9%99%B3%E6%A2%A7%E6%A1%90%E5%85%88%E7%94%9F%E7%8D%8E%E5%8A%A9%E5%AD%B8%E9%87%91%E8%BE%A6%E6%B3%95.pdf (Ignoring non-200 response)
+2026-11-19 18:48:54 [scrapy.extensions.logstats] INFO: Crawled 1583 pages (at 345 pages/min), scraped 1432 items (at 335 items/min)
+2026-11-19 18:49:30 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.management.tku.edu.tw:1337/uploads/TKU_1_1_Information_Session_Presentation_202606_c5e7bf3515.pdf> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2026-11-19 18:49:30 [tkusite] WARNING: Request failed: https://www.management.tku.edu.tw:1337/uploads/TKU_1_1_Information_Session_Presentation_202606_c5e7bf3515.pdf (TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..)
+2026-11-19 18:49:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-11-19 18:49:30 [tkusite] INFO: Store counts: {'new': 1445, 'failed': 74}
+2026-11-19 18:49:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 14,
+ 'downloader/exception_type_count/scrapy.exceptions.DownloadCancelledError': 2,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 12,
+ 'downloader/request_bytes': 821863,
+ 'downloader/request_count': 1625,
+ 'downloader/request_method_count/GET': 1625,
+ 'downloader/response_bytes': 264064328,
+ 'downloader/response_count': 1611,
+ 'downloader/response_status_count/200': 1498,
+ 'downloader/response_status_count/301': 10,
+ 'downloader/response_status_count/302': 5,
+ 'downloader/response_status_count/403': 5,
+ 'downloader/response_status_count/404': 93,
+ 'dupefilter/filtered': 5,
+ 'elapsed_time_seconds': 275.55821799999103,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 11, 19, 10, 49, 30, 351178, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 80373629,
+ 'httpcompression/response_count': 960,
+ 'item_dropped_count': 21,
+ 'item_dropped_reasons_count/DropItem': 21,
+ 'item_scraped_count': 1445,
+ 'items_per_minute': 315.2727272727273,
+ 'log_count/ERROR': 6,
+ 'log_count/INFO': 9,
+ 'log_count/WARNING': 59,
+ 'request_depth_max': 2,
+ 'response_received_count': 1596,
+ 'responses_per_minute': 348.21818181818185,
+ 'retry/count': 8,
+ 'retry/max_reached': 4,
+ 'retry/reason_count/twisted.internet.error.TCPTimedOutError': 8,
+ "robotstxt/exception_count/<class 'twisted.internet.error.TCPTimedOutError'>": 2,
+ 'robotstxt/request_count': 83,
+ 'robotstxt/response_count': 81,
+ 'robotstxt/response_status_count/200': 15,
+ 'robotstxt/response_status_count/403': 1,
+ 'robotstxt/response_status_count/404': 65,
+ 'scheduler/dequeued': 1534,
+ 'scheduler/dequeued/memory': 1534,
+ 'scheduler/enqueued': 1534,
+ 'scheduler/enqueued/memory': 1534,
+ 'start_time': datetime.datetime(2026, 11, 19, 10, 44, 54, 792960, tzinfo=datetime.timezone.utc)}
+2026-11-19 18:49:30 [scrapy.core.engine] INFO: Spider closed (finished)
