@@ -14,7 +14,7 @@ def get_rag_response(user_query: str) -> str:
         - Dormitory Application: Students can apply online via the TKU student portal before August each year.
         - Campus Locations: Tamsui Campus (Main campus, New Taipei City), Taipei Campus, Lanyang Campus.
         - Languages supported: Traditional Chinese and English.
-        - Department of Computer Science and Information Engineering: Location at Tamsui Campus, building E, Room 6
+        - Department of Computer Science and Information Engineering: Location at Tamsui Campus, building E, Room 646
         """
 
         # Prompt engineering for the RAG response
@@ -23,8 +23,9 @@ def get_rag_response(user_query: str) -> str:
         Answer the user's question accurately based ONLY on the provided context below. 
         If the answer is not in the context, politely state that you are still indexing more public data.
         Answer in both languages. Traditional Chinese at first then the answer in English is below it.
-
-        Context:
+        Answer in both languages. Traditional Chinese at first then the answer in English is below it.
+        Answer directly, like a helpful staff member. Never mention the context, database,
+        information base, or phrases such as "according to" or "based on the provided information".
         {mock_tku_context}
 
         User Question: {user_query}
