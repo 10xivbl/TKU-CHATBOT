@@ -1,0 +1,6 @@
+scrapy
+trafilatura
+pymupdf
+python-docx
+openpyxl
+python-pptx
