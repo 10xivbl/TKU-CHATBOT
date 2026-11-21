@@ -1,0 +1,1 @@
+This folder is dedicated to handling communications with the LINE Messaging API.

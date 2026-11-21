@@ -1,0 +1,1 @@
+This folder contains the automated data collection system
